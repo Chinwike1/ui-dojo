@@ -57,9 +57,9 @@ const models = [
 ];
 
 const suggestions = [
-  "Tell me about the movie Spirited Away",
+  "Tell me about Spirited Away",
   "Who are the main characters in Princess Mononoke?",
-  "Can you summarize the plot of Howl's Moving Castle?",
+  "Summarize the plot of Howl's Moving Castle",
 ];
 
 export const AISdkDemo = () => {
