@@ -22,8 +22,9 @@ import {
   type LucideIcon,
   Workflow,
   AppWindowMac,
-  Network
+  Network,
 } from "lucide-react";
+import { SiGithub } from "@icons-pack/react-simple-icons"
 import { AISdkDemo } from "@/demos/ai-sdk";
 import { CopilotKitDemo } from "@/demos/copilot-kit";
 import { AssistantUIDemo } from "@/demos/assistant-ui";
@@ -33,6 +34,7 @@ import { NetworkDemo } from "./demos/ai-sdk/network";
 import { ClientAISdkDemo } from "./demos/client-sdk/ai-sdk";
 import { ClientAssistantUIDemo } from "./demos/client-sdk/assistant-ui";
 import { ClientCopilotKitDemo } from "./demos/client-sdk/copilot-kit";
+import { Button } from "./components/ui/button";
 
 type SidebarId =
   | "aisdk"
@@ -166,7 +168,7 @@ export default function Page() {
           <SidebarHeader>
             <div className="font-bold">UI Frameworks</div>
             <div className="text-sm text-sidebar-foreground/70">
-              Choose an implementation
+              Learn how you can use Mastra with different UI frameworks.
             </div>
           </SidebarHeader>
           <SidebarContent>
@@ -194,8 +196,9 @@ export default function Page() {
             ))}
           </SidebarContent>
           <SidebarFooter>
-            This project demonstrates how you can use Mastra with different UI
-            frameworks.
+            <Button asChild variant="outline">
+              <a href="https://github.com/mastra-ai/ui-dojo" target="_blank"><SiGithub /> Source Code</a>
+            </Button>
           </SidebarFooter>
         </Sidebar>
         <SidebarInset>
