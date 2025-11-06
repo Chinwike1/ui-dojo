@@ -22,7 +22,7 @@ export const mastra = new Mastra({
     url: ":memory:",
   }),
   bundler: {
-    externals: ["@ag-ui/mastra"],
+    externals: ["@ag-ui/mastra", "@ag-ui/core", "@ag-ui/client", "@copilotkit/runtime"],
   },
   server: {
     cors: {

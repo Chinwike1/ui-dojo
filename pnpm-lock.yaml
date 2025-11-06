@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@ag-ui/client':
+        specifier: ^0.0.39
+        version: 0.0.39
+      '@ag-ui/core':
+        specifier: ^0.0.40
+        version: 0.0.40
       '@ag-ui/mastra':
         specifier: ^0.2.0
-        version: 0.2.0(@ag-ui/client@0.0.40)(@ag-ui/core@0.0.39)(@copilotkit/runtime@1.10.6(c362153885a748472884c79ca3c840b9))(@mastra/core@0.24.0(openapi-types@12.1.3)(react@19.2.0)(zod@4.1.12))(openapi-types@12.1.3)(react@19.2.0)(zod@4.1.12)
+        version: 0.2.0(@ag-ui/client@0.0.39)(@ag-ui/core@0.0.40)(@copilotkit/runtime@1.10.6(b4f7b1a4fa8d32e4e8046241fa7b1146))(@mastra/core@0.24.0(openapi-types@12.1.3)(react@19.2.0)(zod@4.1.12))(openapi-types@12.1.3)(react@19.2.0)(zod@4.1.12)
       '@ai-sdk/react':
         specifier: ^2.0.87
         version: 2.0.87(react@19.2.0)(zod@4.1.12)
@@ -31,7 +37,7 @@ importers:
         version: 1.10.6(@types/react@19.2.2)(graphql@16.12.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@copilotkit/runtime':
         specifier: ^1.10.6
-        version: 1.10.6(c362153885a748472884c79ca3c840b9)
+        version: 1.10.6(b4f7b1a4fa8d32e4e8046241fa7b1146)
       '@icons-pack/react-simple-icons':
         specifier: ^13.8.0
         version: 13.8.0(react@19.2.0)
@@ -222,14 +228,17 @@ packages:
     resolution: {integrity: sha512-VTDuRS5V0ATbJ/LkaQlisMnTAeYKXAK6scMguVBstf+KIBQ7HIuKhiXLv+G/hvejkV+THoXzoNifInAkU81P1g==}
     engines: {node: '>=18'}
 
-  '@ag-ui/client@0.0.40':
-    resolution: {integrity: sha512-4ftyZgMN7DIAX64k7Mdex/KGq7lfz8yxEKzniqosD6TE/xk65k4Z0v3bxTzPk2iS2+Cj2uVBgFkb5lC7k5Loqg==}
+  '@ag-ui/client@0.0.39':
+    resolution: {integrity: sha512-VHusZRv0dBtxqKSh/fcLbS/txUpXuE68/2s8RiMoav1snEDonwPGNjvOdE15WResgnlEWPU5qPuSgPykvt2/+A==}
 
   '@ag-ui/core@0.0.37':
     resolution: {integrity: sha512-7bmjPn1Ol0Zo00F+MrPr0eOwH4AFZbhmq/ZMhCsrMILtVYBiBLcLU9QFBpBL3Zm9MCHha8b79N7JE2FzwcMaVA==}
 
   '@ag-ui/core@0.0.39':
     resolution: {integrity: sha512-T5Hp4oFkQ+H5MynWAvSwrX/rNYJOD+PJ4qPQ0o771oSZQAxoIvDDft47Cx5wRyBNNLXAe1RWqJjfWUUwJFNKqA==}
+
+  '@ag-ui/core@0.0.40':
+    resolution: {integrity: sha512-3HFpBzDp9SX4qmSdwYNug95l2XtWTaLIlBZ4Xk7wPES4y59BNSCPLtXQDvdnBi7ns+GqYyR8fRbv52vgN4SGhA==}
 
   '@ag-ui/encoder@0.0.39':
     resolution: {integrity: sha512-6fsoFwPWkStK7Uyj3pwBn7+aQjUWf7pbDTSI43cD53sBLvTr5oEFNnoKOzRfC5UqvHc4JjUIuLKPQyjHRwWg4g==}
@@ -7392,7 +7401,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ag-ui/client@0.0.40':
+  '@ag-ui/client@0.0.39':
     dependencies:
       '@ag-ui/core': 0.0.39
       '@ag-ui/encoder': 0.0.39
@@ -7414,15 +7423,20 @@ snapshots:
       rxjs: 7.8.1
       zod: 3.25.76
 
+  '@ag-ui/core@0.0.40':
+    dependencies:
+      rxjs: 7.8.1
+      zod: 3.25.76
+
   '@ag-ui/encoder@0.0.39':
     dependencies:
       '@ag-ui/core': 0.0.39
       '@ag-ui/proto': 0.0.39
 
-  '@ag-ui/langgraph@0.0.18(@ag-ui/client@0.0.40)(@ag-ui/core@0.0.39)(@opentelemetry/api@1.9.0)(@opentelemetry/exporter-trace-otlp-proto@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@4.104.0(ws@8.18.3)(zod@3.25.76))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@ag-ui/langgraph@0.0.18(@ag-ui/client@0.0.39)(@ag-ui/core@0.0.40)(@opentelemetry/api@1.9.0)(@opentelemetry/exporter-trace-otlp-proto@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@4.104.0(ws@8.18.3)(zod@3.25.76))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@ag-ui/client': 0.0.40
-      '@ag-ui/core': 0.0.39
+      '@ag-ui/client': 0.0.39
+      '@ag-ui/core': 0.0.40
       '@langchain/core': 0.3.79(@opentelemetry/api@1.9.0)(@opentelemetry/exporter-trace-otlp-proto@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@4.104.0(ws@8.18.3)(zod@3.25.76))
       '@langchain/langgraph-sdk': 0.1.10(@langchain/core@0.3.79(@opentelemetry/api@1.9.0)(@opentelemetry/exporter-trace-otlp-proto@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@4.104.0(ws@8.18.3)(zod@3.25.76)))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       partial-json: 0.1.7
@@ -7435,12 +7449,12 @@ snapshots:
       - react
       - react-dom
 
-  '@ag-ui/mastra@0.2.0(@ag-ui/client@0.0.40)(@ag-ui/core@0.0.39)(@copilotkit/runtime@1.10.6(c362153885a748472884c79ca3c840b9))(@mastra/core@0.24.0(openapi-types@12.1.3)(react@19.2.0)(zod@4.1.12))(openapi-types@12.1.3)(react@19.2.0)(zod@4.1.12)':
+  '@ag-ui/mastra@0.2.0(@ag-ui/client@0.0.39)(@ag-ui/core@0.0.40)(@copilotkit/runtime@1.10.6(b4f7b1a4fa8d32e4e8046241fa7b1146))(@mastra/core@0.24.0(openapi-types@12.1.3)(react@19.2.0)(zod@4.1.12))(openapi-types@12.1.3)(react@19.2.0)(zod@4.1.12)':
     dependencies:
-      '@ag-ui/client': 0.0.40
-      '@ag-ui/core': 0.0.39
+      '@ag-ui/client': 0.0.39
+      '@ag-ui/core': 0.0.40
       '@ai-sdk/ui-utils': 1.2.11(zod@4.1.12)
-      '@copilotkit/runtime': 1.10.6(c362153885a748472884c79ca3c840b9)
+      '@copilotkit/runtime': 1.10.6(b4f7b1a4fa8d32e4e8046241fa7b1146)
       '@mastra/client-js': 0.15.2(openapi-types@12.1.3)(react@19.2.0)(zod@4.1.12)
       '@mastra/core': 0.24.0(openapi-types@12.1.3)(react@19.2.0)(zod@4.1.12)
       rxjs: 7.8.1
@@ -8508,12 +8522,12 @@ snapshots:
       - encoding
       - graphql
 
-  '@copilotkit/runtime@1.10.6(c362153885a748472884c79ca3c840b9)':
+  '@copilotkit/runtime@1.10.6(b4f7b1a4fa8d32e4e8046241fa7b1146)':
     dependencies:
-      '@ag-ui/client': 0.0.40
-      '@ag-ui/core': 0.0.39
+      '@ag-ui/client': 0.0.39
+      '@ag-ui/core': 0.0.40
       '@ag-ui/encoder': 0.0.39
-      '@ag-ui/langgraph': 0.0.18(@ag-ui/client@0.0.40)(@ag-ui/core@0.0.39)(@opentelemetry/api@1.9.0)(@opentelemetry/exporter-trace-otlp-proto@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@4.104.0(ws@8.18.3)(zod@3.25.76))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@ag-ui/langgraph': 0.0.18(@ag-ui/client@0.0.39)(@ag-ui/core@0.0.40)(@opentelemetry/api@1.9.0)(@opentelemetry/exporter-trace-otlp-proto@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(openai@4.104.0(ws@8.18.3)(zod@3.25.76))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@ag-ui/proto': 0.0.39
       '@anthropic-ai/sdk': 0.57.0
       '@copilotkit/shared': 1.10.6
