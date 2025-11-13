@@ -118,11 +118,11 @@ const SIDEBAR: SidebarGroupEntry[] = [
   },
   {
     groupId: "with-custom-events",
-    groupName: "With Custom Events",
+    groupName: "AI SDK Custom Events",
     items: [
       {
         id: "generative-user-interfaces-with-custom-events",
-        name: "Generative UIs",
+        name: "Tools",
         icon: AppWindowMac,
         description: "How to use custom events with Generative UIs",
       },
@@ -142,7 +142,7 @@ const SIDEBAR: SidebarGroupEntry[] = [
   },
   {
     groupId: "client-js",
-    groupName: "With Client Tools",
+    groupName: "Client Tools",
     items: [
       {
         id: "client-ai-sdk",

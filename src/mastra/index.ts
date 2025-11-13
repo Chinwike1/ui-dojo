@@ -8,9 +8,9 @@ import { activitiesWorkflow } from "./workflows/activities-workflow";
 import { routingAgent } from "./agents/routing-agent";
 import { bgColorAgent } from "./agents/bg-color-agent";
 import { taskAgent } from "./agents/task-agent";
-import { researchAgent } from "./agents/research-agent";
-import { contentCreationAgent } from "./agents/content-creation-agent";
-import { contentGenerationWorkflow } from "./workflows/content-generation-workflow";
+import { inventoryCheckAgent } from "./agents/inventory-check-agent";
+import { orderProcessingAgent } from "./agents/order-processing-agent";
+import { orderFulfillmentWorkflow } from "./workflows/order-fulfillment-workflow";
 
 export const mastra = new Mastra({
   agents: {
@@ -19,12 +19,12 @@ export const mastra = new Mastra({
     routingAgent,
     bgColorAgent,
     taskAgent,
-    researchAgent,
-    contentCreationAgent,
+    inventoryCheckAgent,
+    orderProcessingAgent,
   },
   workflows: {
     activitiesWorkflow,
-    contentGenerationWorkflow,
+    orderFulfillmentWorkflow,
   },
   storage: new LibSQLStore({
     url: ":memory:",
