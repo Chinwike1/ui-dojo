@@ -39,7 +39,7 @@ const ProgressIndicator = ({ progress }: { progress: ProgressData }) => {
   );
 };
 
-export const GenerativeUserInterfacesCustomEventsDemo = () => {
+const GenerativeUserInterfacesCustomEventsDemo = () => {
   const [input, setInput] = useState("");
   const { messages, sendMessage, status } = useChat({
     transport: new DefaultChatTransport({
@@ -127,3 +127,5 @@ export const GenerativeUserInterfacesCustomEventsDemo = () => {
     </div>
   );
 };
+
+export default GenerativeUserInterfacesCustomEventsDemo;

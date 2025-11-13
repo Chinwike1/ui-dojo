@@ -19,7 +19,7 @@ const suggestions = [
   },
 ];
 
-export const ClientAssistantUIDemo = () => {
+const ClientAssistantUIDemo = () => {
   const runtime = useChatRuntime({
     transport: new AssistantChatTransport({
       api: `${MASTRA_BASE_URL}/chat/bgColorAgent`,
@@ -43,3 +43,5 @@ export const ClientAssistantUIDemo = () => {
     </AssistantRuntimeProvider>
   );
 };
+
+export default ClientAssistantUIDemo;

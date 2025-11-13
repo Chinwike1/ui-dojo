@@ -26,7 +26,7 @@ const suggestions = [
   },
 ];
 
-export const AssistantUIDemo = () => {
+const AssistantUIDemo = () => {
   const runtime = useChatRuntime({
     transport: new AssistantChatTransport({
       api: `${MASTRA_BASE_URL}/chat/ghibliAgent`,
@@ -45,3 +45,5 @@ export const AssistantUIDemo = () => {
     </AssistantRuntimeProvider>
   );
 };
+
+export default AssistantUIDemo;
