@@ -54,17 +54,21 @@ Compare three different approaches to building chat interfaces with Mastra:
 - **Assistant UI** (`src/demos/assistant-ui.tsx`) - Built with Assistant UI's Thread components
 - **CopilotKit** (`src/demos/copilot-kit.tsx`) - Built with CopilotKit's Chat component
 
-### Advanced Patterns
+### AI SDK UI
 
-Explore advanced Mastra capabilities:
+Explore advanced AI SDK UI capabilities:
 
 - **Generative UIs** (`src/demos/ai-sdk/generative-user-interfaces.tsx`) - Custom UI components for tool responses
 - **Workflows** (`src/demos/ai-sdk/workflow.tsx`) - Multi-step workflows with the activities workflow
 - **Agent Networks** (`src/demos/ai-sdk/network.tsx`) - Multiple agents coordinating through a routing agent
 
-### Client SDK Integration
+### Custom Events
 
-See how to use Mastra's Client SDK with each framework:
+- **Generative UIs** (`src/demos/ai-sdk/generative-user-interfaces-custom-events.tsx`) - Custom UI for custom events
+
+### Client Tools
+
+See how to use client tools with each framework:
 
 - **AI SDK + Client SDK** (`src/demos/client-sdk/ai-sdk.tsx`)
 - **Assistant UI + Client SDK** (`src/demos/client-sdk/assistant-ui.tsx`)

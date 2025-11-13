@@ -137,7 +137,8 @@ const SIDEBAR: SidebarGroupEntry[] = [
         id: "client-assistant-ui",
         name: "Assistant UI",
         icon: Bot,
-        description: "How to call frontend tools in Asssistant UI + Client Tools",
+        description:
+          "How to call frontend tools in Asssistant UI + Client Tools",
       },
       {
         id: "client-copilot-kit",
