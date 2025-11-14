@@ -87,7 +87,7 @@ const ProgressIndicator = ({
   );
 };
 
-export const AgentNetworkCustomEventsDemo = () => {
+const AgentNetworkCustomEventsDemo = () => {
   const [topic, setTopic] = useState("");
   const { messages, sendMessage, status, setMessages } = useChat({
     transport: new DefaultChatTransport({
@@ -238,3 +238,4 @@ export const AgentNetworkCustomEventsDemo = () => {
   );
 };
 
+export default AgentNetworkCustomEventsDemo;

@@ -84,7 +84,7 @@ const ProgressIndicator = ({
   );
 };
 
-export const SubAgentsAndWorkflowsCustomEventsDemo = () => {
+const SubAgentsAndWorkflowsCustomEventsDemo = () => {
   const [productId, setProductId] = useState("");
   const [quantity, setQuantity] = useState("");
   const [amount, setAmount] = useState("");
@@ -254,3 +254,5 @@ export const SubAgentsAndWorkflowsCustomEventsDemo = () => {
     </div>
   );
 };
+
+export default SubAgentsAndWorkflowsCustomEventsDemo;

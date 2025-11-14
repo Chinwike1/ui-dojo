@@ -9,31 +9,39 @@ import { MASTRA_BASE_URL } from "@/constants";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Loader2 } from "lucide-react";
 
-type ProgressData = {
-  status: "in-progress" | "done";
-  message: string;
-}| undefined
+type ProgressData =
+  | {
+      status: "in-progress" | "done";
+      message: string;
+    }
+  | undefined;
 
-    const ProgressIndicator = ({ progress }: { progress: ProgressData }) => {
-    if (!progress) return null;
-    return (
+const ProgressIndicator = ({ progress }: { progress: ProgressData }) => {
+  if (!progress) return null;
+
+  return (
     <div className="flex items-center gap-3 p-4 bg-muted rounded-lg">
-      {progress?.status === "in-progress" ? (
-        <Loader2 className="w-5 h-5 animate-spin text-blue-500" />
+      {progress.status === "in-progress" ? (
+        <Loader2 className="w-5 h-5 animate-spin text-primary" />
       ) : (
         <CheckCircle2 className="w-5 h-5 text-green-500" />
       )}
-      <div className="flex-1">
-        <div className="font-medium">{progress?.message}</div>
-        <Badge variant={progress?.status === "in-progress" ? "default" : "secondary"} className="mt-1">
-          {progress?.status === "in-progress" ? "In Progress" : "Done"}
+      <div className="flex items-center gap-3">
+        <Badge
+          variant={progress.status === "in-progress" ? "default" : "default"}
+          className={
+            progress.status === "in-progress" ? "bg-primary" : "bg-green-600"
+          }
+        >
+          {progress.status === "in-progress" ? "In Progress" : "Done"}
         </Badge>
+        <div className="font-medium">{progress.message}</div>
       </div>
     </div>
   );
 };                                                                                                                                                                            
 
-export const GenerativeUserInterfacesCustomEventsDemo = () => {
+const GenerativeUserInterfacesCustomEventsDemo = () => {
   const [input, setInput] = useState("");
   const { messages, sendMessage, status } = useChat({
     transport: new DefaultChatTransport({
@@ -46,7 +54,6 @@ export const GenerativeUserInterfacesCustomEventsDemo = () => {
     sendMessage({ text: input });
     setInput("");
   };
-
 
   const toolProgress = useMemo(() => {
     // Find all progress parts across all messages
@@ -65,7 +72,6 @@ export const GenerativeUserInterfacesCustomEventsDemo = () => {
     }
     return undefined;
   }, [messages]);
- 
 
   return (
     <div className="flex flex-col gap-8">
@@ -77,7 +83,7 @@ export const GenerativeUserInterfacesCustomEventsDemo = () => {
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Enter a task to process (e.g., 'Generate report', 'Process data')"
+            placeholder={`Enter a task to process, for example: "Generate report" or "Process data"`}
           />
           <Button type="submit" disabled={status !== "ready"}>
             Process Task
@@ -124,3 +130,4 @@ export const GenerativeUserInterfacesCustomEventsDemo = () => {
   );
 };
 
+export default GenerativeUserInterfacesCustomEventsDemo;

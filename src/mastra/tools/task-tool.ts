@@ -19,7 +19,7 @@ export const taskTool = createTool({
       type: "data-tool-progress",
       data: {
         status: "in-progress",
-        message: `Calling task tool`,
+        message: `Gathering information...`,
       },
     });
 
@@ -29,10 +29,10 @@ export const taskTool = createTool({
     // Emit "done" custom event
     await writer?.custom({
       type: "data-tool-progress",
-        data: {
-            status: "done",
-            message: `Task tool completed`,
-        },
+      data: {
+        status: "done",
+        message: `Successfully processed "${task}"`,
+      },
     });
 
     return {
@@ -41,4 +41,3 @@ export const taskTool = createTool({
     };
   },
 });
-

@@ -14,4 +14,3 @@ export const taskAgent = new Agent({
   tools: { taskTool },
   memory: new Memory(),
 });
-
