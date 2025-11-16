@@ -34,6 +34,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { DialogDescription } from "@radix-ui/react-dialog";
 
 type SidebarEntry = {
   id: string;
@@ -303,6 +304,9 @@ export default function Page({ children }: { children: React.ReactNode }) {
                   <DialogContent>
                     <DialogHeader>
                       <DialogTitle>{pageTitle}</DialogTitle>
+                      <DialogDescription className="sr-only">
+                        Explanation for {pageTitle}
+                      </DialogDescription>
                     </DialogHeader>
                     <div>
                       <p>{pageExplanation}</p>
